@@ -147,9 +147,7 @@ header {
 .top-contact.list > li:first-child {
   margin-right: 50px;
 }
-.header-contact svg {
-  width: 16px;
-  height: 12px;
+.icon-mail {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
@@ -203,7 +201,7 @@ header {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  border: none;
+  border: 1px solid #000000;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -213,7 +211,6 @@ header {
 .order:hover,
 .order:focus {
   background: #188ce8;
-  border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
