@@ -151,7 +151,7 @@ header {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.header-contact svg:hover {
+.header-contact:hover svg {
   fill: var(--accent-color);
 }
 
@@ -201,7 +201,6 @@ header {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  border: 1px solid #000000;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -213,7 +212,7 @@ header {
   background: #188ce8;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
+
   border-radius: 4px;
 }
 
@@ -335,17 +334,22 @@ header {
 
 /*заголовки карток - згруповані*/
 .title-group {
-  padding: 30px 0;
+  padding: 30px 32px 30px 32px;
   text-align: center;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 /*соціальні мережі*/
 .social.list {
   display: flex;
-  width: inherit;
   margin-top: 16px;
+  margin-left: 0px;
   justify-content: space-between;
-  margin: 16px 32px 0 32px;
+}
+
+.social li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -364,8 +368,8 @@ header {
   fill: #afb1b8;
 }
 
-.social-link-icon:hover,
-.social-link-icon:focus {
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
   fill: var(--text-white);
 }
 
@@ -395,7 +399,6 @@ header {
   height: 92px;
   border: solid 1px #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -409,8 +412,8 @@ header {
   box-sizing: border-box;
 }
 
-.customer-logo:hover,
-.customer-logo:focus {
+.customer-link:hover .customer-logo,
+.customer-link:focus .customer-logo {
   fill: var(--accent-color);
 }
 
@@ -461,7 +464,7 @@ footer .logo {
 }
 
 .footer-social-links {
-  min-width: 206px;
+  align-items: baseline;
   margin: 12px 0px 0px 70px;
 }
 .join {
@@ -479,6 +482,10 @@ footer .logo {
 .footer-social {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-social li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer.social-link {
@@ -571,8 +578,6 @@ footer .logo {
 .project-item:hover,
 .project-item:focus {
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
