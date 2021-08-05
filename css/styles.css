@@ -461,11 +461,11 @@ footer .logo {
 
 .footer.container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-links {
-  align-items: baseline;
-  margin: 12px 0px 0px 70px;
+  margin-left: 70px;
 }
 .join {
   margin-bottom: 20px;
@@ -575,20 +575,17 @@ footer .logo {
   background-color: var(--primary-bgc);
 }
 
-.project-item:hover,
-.project-item:focus {
-  background: #ffffff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-link {
+  display: block;
+  height: 100%;
   font-family: Roboto;
   text-decoration: none;
 }
-.project-link :hover,
-.project-link :focus {
-  visibility: visible;
+.project-link:hover,
+.project-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*заголовки карток - згруповані*/
